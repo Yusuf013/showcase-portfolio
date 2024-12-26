@@ -4,13 +4,13 @@ import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const names = [
-  "{Yusuf Taşçı}",
-  "{ ユスフタスチ}",
-  "{يوسف تاشجي}",
-  "{Юсуф Тасчи}",
-  "{유수프 타스치}",
-  "{Γιουσούφ Τάσκι}",
-  "{Yusuf Taşçı}",
+  "Yusuf Taşçı",
+  "ユスフタスチ",
+  "يوسف تاشجي",
+  "Юсуф Тасчи",
+  "유수프 타스치",
+  "Γιουσούφ Τάσκι",
+  "Yusuf Taşçı",
 ]
 
 export default function NameAnimation() {
@@ -35,7 +35,7 @@ export default function NameAnimation() {
           transition={{ duration: 0.5 }}
           className="text-8xl font-bold text-[#F47519]"
         >
-          {names[currentIndex]}
+          {"{"} {names[currentIndex]} {"}"}
         </motion.div>
       </AnimatePresence>
     </div>

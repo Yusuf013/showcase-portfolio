@@ -23,42 +23,51 @@ export default function FloatingText() {
   const [positions, setPositions] = useState([]);
 
   useEffect(() => {
-    // Genereer willekeurige start- en animatieposities op de client
+    // Genereer willekeurige startposities verspreid over de volledige breedte en hoogte
     const generatedPositions = floatingItems.map(() => ({
-      initialX: getRandomValue(-200, 200),
-      initialY: getRandomValue(-200, 200),
-      targetX: getRandomValue(-50, 50),
-      targetY: getRandomValue(-50, 50),
+      initialX: getRandomValue(0, window.innerWidth), // Volledige breedte van het scherm
+      initialY: getRandomValue(window.innerHeight / 4, (window.innerHeight / 4) * 3), // Gecentreerde verticale zone
     }));
     setPositions(generatedPositions);
   }, []);
 
   if (positions.length === 0) {
-    // Wacht totdat de posities zijn gegenereerd
+    // Wacht totdat de posities zijn geladen
     return null;
   }
 
   return (
-    <div className="relative flex items-center justify-center min-h-screen overflow-hidden bg-gray-800">
-      <div className="relative w-[80%] h-[80%] border border-dashed border-orange-500 overflow-hidden">
+    <div
+      className="relative flex items-center justify-center min-h-screen overflow-hidden"
+      style={{
+        backgroundImage: "url('/images/Me.svg')",
+        backgroundSize: 'contain', // Zorg dat de afbeelding de hele achtergrond vult
+        backgroundPosition: 'center', // Centreer de achtergrondafbeelding
+        backgroundRepeat: 'no-repeat', // Voorkom dat de afbeelding herhaald wordt
+      }}
+    >
+      <div className="absolute inset-0">
         {floatingItems.map((item, index) => {
-          const { initialX, initialY, targetX, targetY } = positions[index];
+          const { initialX, initialY } = positions[index];
           return (
             <motion.div
               key={index}
               className="absolute px-4 py-2 bg-orange-500 text-black font-semibold rounded-full"
               initial={{
-                x: initialX,
-                y: initialY,
+                x: initialX, // Willekeurige X-positie
+                y: initialY, // Willekeurige Y-positie
               }}
               animate={{
-                x: [initialX, initialX + targetX, initialX - targetX, initialX],
-                y: [initialY, initialY - targetY, initialY + targetY, initialY],
+                x: [initialX, initialX + getRandomValue(-100, 100), initialX - getRandomValue(-100, 100)],
+                y: [initialY, initialY - getRandomValue(-50, 50), initialY + getRandomValue(-50, 50)],
               }}
               transition={{
                 duration: getRandomValue(4, 8),
                 repeat: Infinity,
                 ease: 'easeInOut',
+              }}
+              style={{
+                transform: `translate(-50%, -50%)`,
               }}
             >
               {item}

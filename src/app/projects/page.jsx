@@ -34,7 +34,7 @@ export default function Projects() {
           className="absolute w-full h-full mask-polygon transition-transform duration-300 cursor-pointer"
           onMouseEnter={() => setHoveredProject("Upendo")}
           onMouseLeave={() => setHoveredProject("Kies project")}
-          onClick={() => handlePolygonClick("/projects/mcdonalds")} // Navigatie bij klik
+          onClick={() => handlePolygonClick("/MyWorks/Upendo")} // Bijgewerkt pad
           style={{
             transform: "scale(1.4)",
             backgroundImage: "url('/images/Upendo.png')",
@@ -60,7 +60,7 @@ export default function Projects() {
           className="absolute w-full h-full mask-polygon transition-transform duration-300 cursor-pointer"
           onMouseEnter={() => setHoveredProject("TrendFocus")}
           onMouseLeave={() => setHoveredProject("Kies project")}
-          onClick={() => handlePolygonClick("/projects/upendo")}
+          onClick={() => handlePolygonClick("/MyWorks/TrendFocus")} // Bijgewerkt pad
           style={{
             transform: "translate(50%, -50%) rotate(-73deg) scale(1.4)",
             top: "-25%",
@@ -90,7 +90,7 @@ export default function Projects() {
           className="absolute w-full h-full mask-polygon transition-transform duration-300 cursor-pointer"
           onMouseEnter={() => setHoveredProject("Trendfocus")}
           onMouseLeave={() => setHoveredProject("Kies project")}
-          onClick={() => handlePolygonClick("/projects/trendfocus")}
+          onClick={() => handlePolygonClick("/MyWorks/TrendFocus")} // Bijgewerkt pad
           style={{
             transform: "translate(-50%, -50%) rotate(73deg) scale(1.4)",
             top: "-25%",
@@ -120,7 +120,7 @@ export default function Projects() {
           className="absolute w-full h-full mask-polygon transition-transform duration-300 cursor-pointer"
           onMouseEnter={() => setHoveredProject("Coming Soon")}
           onMouseLeave={() => setHoveredProject("Kies project")}
-          onClick={() => handlePolygonClick("/projects/extra-rechts")}
+          onClick={() => handlePolygonClick("/MyWorks/ExtraRechts")} // Bijgewerkt pad
           style={{
             transform: "translate(50%, -100%) rotate(220deg) scale(1.4)",
             top: "-100%",
@@ -150,7 +150,7 @@ export default function Projects() {
           className="absolute w-full h-full mask-polygon transition-transform duration-300 cursor-pointer"
           onMouseEnter={() => setHoveredProject("Upendo")}
           onMouseLeave={() => setHoveredProject("Kies project")}
-          onClick={() => handlePolygonClick("/projects/extra-links")}
+          onClick={() => handlePolygonClick("/MyWorks/Upendo")} // Bijgewerkt pad
           style={{
             transform: "translate(-50%, -100%) rotate(-220deg) scale(1.4)",
             top: "-100%",

@@ -25,7 +25,7 @@ export default function NameAnimation() {
   }, [])
 
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center py-[215px]">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}

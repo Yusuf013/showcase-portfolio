@@ -25,7 +25,7 @@ export default function NameAnimation() {
   }, [])
 
   return (
-    <div className="flex items-center justify-center py-[215px]">
+    <div className="flex items-center justify-center py-[200px]">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
@@ -33,7 +33,7 @@ export default function NameAnimation() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.5 }}
-          className="text-8xl font-bold text-[#F47519]"
+          className="text-9xl font-bold text-[#F47519]"
         >
           {"{"} {names[currentIndex]} {"}"}
         </motion.div>

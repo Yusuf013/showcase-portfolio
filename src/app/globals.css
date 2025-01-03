@@ -23,3 +23,15 @@ body {
 .background {
   background-color: #283127;
 }
+
+@font-face {
+  font-family: 'Formula1';
+  src: url('/fonts/Formula1-Bold_web_0.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Zorg voor een fallback-font */
+body {
+  font-family: 'Formula1', Arial, sans-serif;
+}

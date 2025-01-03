@@ -1,9 +1,19 @@
+/** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: [
+    './app/**/*.{js,ts,jsx,tsx}', // Scan de bestanden in de app-map
+    './pages/**/*.{js,ts,jsx,tsx}', // Scan de bestanden in de pages-map
+    './components/**/*.{js,ts,jsx,tsx}', // Scan de bestanden in de components-map
+    './src/**/*.{js,jsx,ts,tsx}', // Scan de bestanden in de src-map
+  ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        formula1: ['Formula1', 'sans-serif'], // Voeg de Formula1 font toe
+      },
+    },
   },
   plugins: [
     plugin(function ({ addUtilities }) {

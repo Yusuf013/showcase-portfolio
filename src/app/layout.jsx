@@ -42,21 +42,23 @@ export default function RootLayout({ children }) {
           </div>
           <div className="w-[75%]  flex items-center justify-center ">
             <ul className="flex justify-center w-[100%] text-2xl text-[#F47519]">
-              <li>
+              <li className="hover:text-[#FFFDE4] transition-colors duration-300">
                 <Link href="/">Home</Link>
               </li>
-              <li className="mx-32">
+              <li className="hover:text-[#FFFDE4] transition-colors duration-300 mx-32">
                 <Link href="/aboutme">About me</Link>
               </li>
-              <li>
+              <li className="hover:text-[#FFFDE4] transition-colors duration-300">
                 <Link href="/projects">Projects</Link>
               </li>
             </ul>
           </div>
           <div className="w-[10%] flex items-center justify-center">
-            <button className="rounded-full bg-[#F47519] text-[#283127] font-bold px-3 py-1 hover:bg-[#FFFDE4] transition-colors duration-300">
-              Contact
-            </button>
+            <Link href="/contact">
+              <button className="rounded-full bg-[#F47519] text-[#283127] font-bold px-3 py-1 hover:bg-[#FFFDE4] transition-colors duration-300">
+                Contact
+              </button>
+            </Link>
           </div>
         </nav>
         <div className="background">{children}</div>

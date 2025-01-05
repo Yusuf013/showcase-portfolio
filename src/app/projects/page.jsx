@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Footer from '../components/Footer';
 
 export default function Projects() {
   const [hoveredProject, setHoveredProject] = useState("Kies project");

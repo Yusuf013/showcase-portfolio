@@ -1,4 +1,5 @@
 import FloatingText from '../components/FloatingText';
+import Footer from '../components/Footer';
 
 export default function AboutMe() {
   return (
@@ -75,6 +76,7 @@ export default function AboutMe() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

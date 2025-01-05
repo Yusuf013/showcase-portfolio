@@ -10,10 +10,9 @@ const UpendoPage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [imageOpacity, setImageOpacity] = useState(1)
   const images = [
-    '/images/Trendfocus.svg',
-    '/images/Upendo.png',
-    '/images/Trendfocus.svg',
-    '/images/Upendo.png'
+    '/images/UpendoS1.png',
+    '/images/UpendoS2.png',
+    '/images/UpendoS3.png',
   ]
 
   useEffect(() => {
@@ -86,112 +85,130 @@ const UpendoPage = () => {
         className="flex h-full w-full overflow-hidden"
         data-scroll-container
       >
+        {/* section 1 */}
+        <section
+          className="w-screen h-full flex-shrink-0 flex flex-col items-center justify-start bg-[#283127] mt-10 p-0 relative"
+          data-scroll-section
+        >
+          <div
+            className="absolute inset-0 bg-no-repeat bg-cover bg-center"
+            style={{
+              backgroundImage: "url('/images/sectie1bg.svg')",
+            }}
+          ></div>
+          <div className="relative z-10 w-[90%] h-[55%] flex flex-col mx-auto">
+            <div className="flex-1 flex items-center">
+              <h1 className="text-[#F47519] font-formula1 text-[140px]">
+                Project
+              </h1>
+            </div>
+            <div className="flex-1 flex items-center justify-end">
+              <h1 className="text-[#FFFDE4] font-formula1 text-[80px] mr-10">
+                Upendo
+              </h1>
+            </div>
+            <div className="flex-1 flex items-center">
+              <h1 className="text-[#9A9B9B] font-formula1 text-[90px]">
+                November 2024
+              </h1>
+            </div>
+          </div>
+        </section>
 
-{/* section 1 */}
+        {/* section 2 */}
+        <section
+          className="w-screen h-full flex items-center justify-center bg-[#283127]  mt-10 p-0 relative"
+          data-scroll-section
+        >
+          <div
+            className="absolute inset-0 bg-no-repeat bg-cover bg-center"
+            style={{
+              backgroundImage: "url('/images/sectie2bg.svg')",
+            }}
+          ></div>
+          <div className="relative z-10 flex justify-center mt-4">
+            <img src="/images/Upendologo.png" className="w-[300px] h-auto" />
+          </div>
+          <div className="relative z-10 flex justify-center">
+            <div className="w-[85%] flex">
+              <div className=" w-[50%] flex items-center">
+                <div className="w-[10%] h-full ">
+                  <img src="/images/Group 20.svg" />
+                </div>
+                <div className="overflow-hidden whitespace-normal w-[90%] h-[80%] h-full">
+                  <p className="text=[15px] w-[100%]">
+                    For the second project of this semester, we once again
+                    worked in teams to develop a website for a new, specialized
+                    service from 2Manydots called Upendo.<br></br>
+                    <br></br>
+                    Upendo focuses on making data analysis and visualization
+                    accessible for businesses. The goal is to help organizations
+                    clearly map out their performance and goals without
+                    resorting to complicated jargon or complex processes. Upendo
+                    offers transparent, fixed pricing and practical, immediately
+                    applicable solutions in the areas of data configuration,
+                    optimization, visualization, analysis, and training. This
+                    enables companies to quickly and efficiently extract value
+                    from their data.
+                  </p>
+                </div>
+              </div>
+              <div className=" w-[40%] h-[100%] flex flex-col justify-around py-3 items-center ml-32">
+                <div className="overflow-hidden whitespace-normal">
+                  <p className="text=[15px] w-[100%] ">
+                    For this project, we received a fully developed design with
+                    clear guidelines from our client, which allowed us to focus
+                    primarily on the development phase. The client specified
+                    several key requirements, including creating a responsive
+                    web design, integrating a headless CMS, and implementing a
+                    feature to schedule training sessions on specific dates and
+                    times. To meet these requirements, we used Next.js for
+                    development, Tailwind CSS for styling, and Storyblok as the
+                    headless CMS.
+                  </p>
+                </div>
+                <div>
+                  <a
+                    href="https://upendo2-sigma.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="rounded-full bg-[#F47519] text-[#283127] font-bold px-3 py-1 hover:bg-[#FFFDE4] transition-colors duration-300">
+                      Live demo
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-<section
-  className="w-screen h-full flex-shrink-0 flex flex-col items-center justify-start bg-[#283127] mt-10 p-0 relative"
-  data-scroll-section
->
-  {/* SVG Background */}
-  <div
-    className="absolute inset-0 bg-no-repeat bg-cover bg-center"
-    style={{
-      backgroundImage: "url('/images/sectie1bg.svg')",
-    }}
-  ></div>
-
-  {/* Content */}
-  <div className="relative z-10 w-[90%] h-[55%] flex flex-col mx-auto">
-    <div className="flex-1 flex items-center">
-      <h1 className="text-[#F47519] font-formula1 text-[140px]">Project</h1>
-    </div>
-    <div className="flex-1 flex items-center justify-end">
-      <h1 className="text-[#FFFDE4] font-formula1 text-[80px] mr-10">Upendo</h1>
-    </div>
-    <div className="flex-1 flex items-center">
-      <h1 className="text-[#9A9B9B] font-formula1 text-[90px]">November 2024</h1>
-    </div>
-  </div>
-</section>
-
-{/* section 2 */}
-
-<section
-  className="w-screen h-full flex items-center justify-center bg-[#283127]  mt-10 p-0 relative"
-  data-scroll-section
->
-  {/* SVG Background */}
-  <div
-    className="absolute inset-0 bg-no-repeat bg-cover bg-center"
-    style={{
-      backgroundImage: "url('/images/sectie2bg.svg')",
-    }}
-  ></div>
-
-  {/* Content */}
-  <div className="relative z-10 flex justify-center mt-7">
-    <h1
-      className="text-4xl font-bold text-[#FFFDE4] p-5  text-[22px]"
-      data-scroll
-      data-scroll-speed="2"
-    >
-      About the project
-    </h1>
-  </div>
-
-  <div className="relative z-10 flex justify-center">
-    <div className="w-[80%] flex">
-      <div className="bg-purple-500 w-[50%] flex items-center">
-        <div>
-          <img src="/images/Group 20.svg" />
-        </div>
-        <div>
-          <p className="text=[15px]">sucuk</p>
-        </div>
-      </div>
-      <div className="flex items-center justify-center w-[50%]">
-        <img
-          src="/images/Risorsa 6u.svg"
-          alt="Description"
-          className="w-auto h-auto max-w-none"
-        />
-      </div>
-    </div>
-  </div>
-</section>
-
-{/* section 3 */}
-
-<section
-  className="w-screen h-full flex-shrink-0 flex items-center justify-center bg-[#283127] mt-10 p-0 relative"
-  data-scroll-section
-  data-scroll-id="section3"
->
-  {/* SVG Background */}
-  <div
-    className="absolute inset-0 bg-no-repeat bg-cover bg-center"
-    style={{
-      backgroundImage: "url('/images/sectie3bg.svg')",
-    }}
-  ></div>
-
-  {/* Content */}
-  <div className="relative z-10 absolute w-full h-full flex items-center justify-center">
-    <div className="w-[75%] h-[55%] bg-gray-200 overflow-hidden flex items-center justify-center mb-64">
-      <img
-        src={images[currentImageIndex]}
-        alt={`Image ${currentImageIndex + 1}`}
-        className="w-full h-full object-cover transition-all duration-[1000ms] ease-in-out"
-        style={{
-          opacity: imageOpacity,
-          filter: imageOpacity === 1 ? "blur(0px)" : "blur(10px)", // Voeg blur toe
-        }}
-      />
-    </div>
-  </div>
-</section>
-
+        {/* section 3 */}
+        <section
+          className="w-screen h-full flex-shrink-0 flex items-center justify-center bg-[#283127] mt-10 p-0 relative"
+          data-scroll-section
+          data-scroll-id="section3"
+        >
+          <div
+            className="absolute inset-0 bg-no-repeat bg-cover bg-center"
+            style={{
+              backgroundImage: "url('/images/sectie3bg.svg')",
+            }}
+          ></div>
+          <div className="relative z-10 absolute w-full h-full flex items-center justify-center">
+            <div className="w-[75%] h-[55%] bg-[#283127] overflow-hidden flex items-center justify-center mb-64">
+              <img
+                src={images[currentImageIndex]}
+                alt={`Image ${currentImageIndex + 1}`}
+                className="w-full h-auto max-h-full object-cover transition-all duration-[1000ms] ease-in-out"
+                style={{
+                  opacity: imageOpacity,
+                  filter: imageOpacity === 1 ? "blur(0px)" : "blur(10px)", // Voeg blur toe
+                }}
+              />
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   );

@@ -26,19 +26,29 @@ export default function RootLayout({ children }) {
       >
         <nav className="flex items-center justify-center p-3 bg-[#283127]">
           <div className="w-[10%] flex items-center justify-around">
-            <Image
-              src="/images/LinkedIn (1).svg"
-              alt="Logo"
-              width={33}
-              height={38}
-            />
-            <Image src="/images/GitHub.svg" alt="Logo" width={33} height={38} />
-            <Image
-              src="/images/Instagram.svg"
-              alt="Logo"
-              width={33}
-              height={38}
-            />
+            <a href="https://www.linkedin.com/in/yusuf-tasci-44a710264/">
+              <Image
+                src="/images/LinkedIn (1).svg"
+                alt="Logo"
+                width={33}
+                height={38}
+              />
+            </a>
+            <a href="https://github.com/Yusuf013">
+              <Image 
+                src="/images/GitHub.svg" 
+                alt="Logo" 
+                width={33} 
+                height={38} />
+            </a>
+            <a href="https://www.instagram.com/yusuffffffff._/">
+              <Image
+                src="/images/Instagram.svg"
+                alt="Logo"
+                width={33}
+                height={38}
+              />
+            </a>
           </div>
           <div className="w-[75%]  flex items-center justify-center ">
             <ul className="flex justify-center w-[100%] text-2xl text-[#F47519]">

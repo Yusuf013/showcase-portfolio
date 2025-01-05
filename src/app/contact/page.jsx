@@ -41,28 +41,34 @@ export default function ContactPage() {
             </div>
             <div className="flex flex-col justify-center items-center w-1/3">
               <div>
-                <Image
-                  src="/images/linkedin (14).png"
-                  alt="Logo"
-                  width={66}
-                  height={76}
-                />
+                <a href="https://www.linkedin.com/in/yusuf-tasci-44a710264/">
+                  <Image
+                    src="/images/linkedin (14).png"
+                    alt="Logo"
+                    width={66}
+                    height={76}
+                  />
+                </a>
               </div>
               <div className='py-7'>
-                <Image
-                  src="/images/github (6).png"
-                  alt="Logo"
-                  width={66}
-                  height={76}
-                />
+                <a href="https://github.com/Yusuf013">
+                  <Image
+                    src="/images/github (6).png"
+                    alt="Logo"
+                    width={66}
+                    height={76}
+                  />
+                </a>
               </div>
               <div>
-                <Image
-                  src="/images/instagram (5).png"
-                  alt="Logo"
-                  width={66}
-                  height={76}
-                />
+                <a href="https://www.instagram.com/yusuffffffff._/">
+                  <Image
+                    src="/images/instagram (5).png"
+                    alt="Logo"
+                    width={66}
+                    height={76}
+                  />
+                </a>
               </div>
             </div>
           </div>

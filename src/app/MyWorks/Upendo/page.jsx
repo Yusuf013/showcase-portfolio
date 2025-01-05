@@ -137,7 +137,7 @@ const UpendoPage = () => {
                 <div className="w-[10%] h-full ">
                   <img src="/images/Group 20.svg" />
                 </div>
-                <div className="overflow-hidden whitespace-normal w-[90%] h-[80%] h-full">
+                <div className="overflow-hidden whitespace-normal w-[90%] h-[80%] h-full flex items-center">
                   <p className="text=[15px] w-[100%]">
                     For the second project of this semester, we once again
                     worked in teams to develop a website for a new, specialized
@@ -157,7 +157,7 @@ const UpendoPage = () => {
               </div>
               <div className=" w-[40%] h-[100%] flex flex-col justify-around py-3 items-center ml-32">
                 <div className="overflow-hidden whitespace-normal">
-                  <p className="text=[15px] w-[100%] ">
+                  <p className="text=[15px] w-[100%] mt-1 ">
                     For this project, we received a fully developed design with
                     clear guidelines from our client, which allowed us to focus
                     primarily on the development phase. The client specified

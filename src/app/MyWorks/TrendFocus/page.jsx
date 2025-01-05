@@ -137,7 +137,7 @@ const UpendoPage = () => {
                 <div className="w-[10%] h-full ">
                   <img src="/images/Group 20.svg" />
                 </div>
-                <div className="overflow-hidden whitespace-normal w-[90%] h-[80%] h-full">
+                <div className="overflow-hidden whitespace-normal w-[90%] h-[80%] h-full flex items-center">
                   <p className="text=[15px] w-[100%]">
                   In the third semester of ICT & Media Design, we work in teams on two projects for the client 2Manydots. In this first project, we are developing a marketing news website aimed at marketing professionals (such as marketers, strategists, and copywriters) and entrepreneurs with an interest in marketing.
                     <br></br>
@@ -147,7 +147,7 @@ const UpendoPage = () => {
               </div>
               <div className=" w-[40%] h-[100%] flex flex-col justify-around py-3 items-center ml-32">
                 <div className="overflow-hidden whitespace-normal">
-                  <p className="text=[15px] w-[100%] ">
+                  <p className="text=[15px] w-[100%] mt-3 ">
                   This project primarily emphasized design, as we were tasked with creating a brand identity for the website entirely from scratch. The client outlined key requirements, including developing a responsive web design and integrating a headless CMS. Additionally, they requested features such as social media integration, a dark mode, and advertisements.
                   For the development, we used Next.js as the framework, styled the website with Tailwind CSS, and implemented Storyblok as the headless CMS.
                   </p>

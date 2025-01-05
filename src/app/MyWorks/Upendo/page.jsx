@@ -86,6 +86,9 @@ const UpendoPage = () => {
         className="flex h-full w-full overflow-hidden"
         data-scroll-container
       >
+
+{/* section 1 */}
+
 <section
   className="w-screen h-full flex-shrink-0 flex flex-col items-center justify-start bg-[#283127] mt-10 p-0 relative"
   data-scroll-section
@@ -111,6 +114,8 @@ const UpendoPage = () => {
     </div>
   </div>
 </section>
+
+{/* section 2 */}
 
 <section
   className="w-screen h-full flex items-center justify-center bg-[#283127]  mt-10 p-0 relative"
@@ -156,6 +161,8 @@ const UpendoPage = () => {
   </div>
 </section>
 
+{/* section 3 */}
+
 <section
   className="w-screen h-full flex-shrink-0 flex items-center justify-center bg-[#283127] mt-10 p-0 relative"
   data-scroll-section
@@ -171,7 +178,7 @@ const UpendoPage = () => {
 
   {/* Content */}
   <div className="relative z-10 absolute w-full h-full flex items-center justify-center">
-    <div className="w-2/3 h-2/3 bg-gray-200 overflow-hidden flex items-center justify-center">
+    <div className="w-[75%] h-[55%] bg-gray-200 overflow-hidden flex items-center justify-center mb-64">
       <img
         src={images[currentImageIndex]}
         alt={`Image ${currentImageIndex + 1}`}

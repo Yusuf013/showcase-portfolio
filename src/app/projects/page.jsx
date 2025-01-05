@@ -16,7 +16,7 @@ export default function Projects() {
     <div className="flex items-center justify-center h-screen relative">
       {/* Tekst in het midden van de pagina met transitie */}
       <div
-        className="absolute top-[45%] left-45% transform -translate-x-1/2 -translate-y-1/2 text-xl font-bold text-white transition-all duration-500 ease-in-out opacity-100"
+        className="absolute top-[45%] left-45% transform -translate-x-1/2 -translate-y-1/2 text-xl font-bold text-[#F47519] transition-all duration-500 ease-in-out opacity-100"
         style={{
           opacity: hoveredProject === "Kies project" ? 0.8 : 1,
           transform: hoveredProject === "Kies project" ? "scale(1)" : "scale(1.1)",
@@ -126,7 +126,7 @@ export default function Projects() {
             transform: "translate(50%, -100%) rotate(220deg) scale(1.4)",
             top: "-100%",
             right: "-35%",
-            backgroundImage: "url('/images/mcdonald.svg')",
+            backgroundImage: "url('/images/ComingSoon.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             WebkitMaskImage: "url('/polygons/Polygon1.svg')",

@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import LocomotiveScroll from 'locomotive-scroll'
+import dynamic from 'next/dynamic'
 import 'locomotive-scroll/dist/locomotive-scroll.css'
 
 const UpendoPage = () => {
@@ -18,15 +18,22 @@ const UpendoPage = () => {
   ]
 
   useEffect(() => {
-    // Initialiseer Locomotive Scroll
-    locomotiveRef.current = new LocomotiveScroll({
-      el: containerRef.current,
-      direction: 'horizontal',
-      smooth: true,
-      multiplier: 1.5,
-      smartphone: { smooth: true, direction: 'horizontal' },
-      tablet: { smooth: true, direction: 'horizontal' }
-    })
+    // Dynamische import van Locomotive Scroll
+    let LocomotiveScroll
+    const initLocomotive = async () => {
+      const module = await import('locomotive-scroll')
+      LocomotiveScroll = module.default
+      locomotiveRef.current = new LocomotiveScroll({
+        el: containerRef.current,
+        direction: 'horizontal',
+        smooth: true,
+        multiplier: 1.5,
+        smartphone: { smooth: true, direction: 'horizontal' },
+        tablet: { smooth: true, direction: 'horizontal' },
+      })
+    }
+
+    initLocomotive()
 
     const handleWheel = (event) => {
       const instance = locomotiveRef.current?.scroll?.instance
@@ -251,7 +258,7 @@ const UpendoPage = () => {
         </section>
       </div>
     </main>
-  );
+  )
 }
 
 export default UpendoPage

@@ -212,7 +212,7 @@ const UpendoPage = () => {
                 alt="Upendo Image 1"
               />
               <img
-                src="/images/UpendoM2.PNG"
+                src="/images/UpendoM3.PNG"
                 className="w-auto h-[400px]"
                 alt="Upendo Image 2"
               />

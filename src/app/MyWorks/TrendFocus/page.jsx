@@ -1,10 +1,10 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import LocomotiveScroll from 'locomotive-scroll'
+import dynamic from 'next/dynamic'
 import 'locomotive-scroll/dist/locomotive-scroll.css'
 
-const UpendoPage = () => {
+const TrendFocuspage = () => {
   const containerRef = useRef(null)
   const locomotiveRef = useRef(null)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -18,15 +18,22 @@ const UpendoPage = () => {
   ]
 
   useEffect(() => {
-    // Initialiseer Locomotive Scroll
-    locomotiveRef.current = new LocomotiveScroll({
-      el: containerRef.current,
-      direction: 'horizontal',
-      smooth: true,
-      multiplier: 1.5,
-      smartphone: { smooth: true, direction: 'horizontal' },
-      tablet: { smooth: true, direction: 'horizontal' }
-    })
+    // Dynamische import van Locomotive Scroll
+    let LocomotiveScroll
+    const initLocomotive = async () => {
+      const module = await import('locomotive-scroll')
+      LocomotiveScroll = module.default
+      locomotiveRef.current = new LocomotiveScroll({
+        el: containerRef.current,
+        direction: 'horizontal',
+        smooth: true,
+        multiplier: 1.5,
+        smartphone: { smooth: true, direction: 'horizontal' },
+        tablet: { smooth: true, direction: 'horizontal' },
+      })
+    }
+
+    initLocomotive()
 
     const handleWheel = (event) => {
       const instance = locomotiveRef.current?.scroll?.instance
@@ -139,7 +146,7 @@ const UpendoPage = () => {
                 </div>
                 <div className="overflow-hidden whitespace-normal w-[90%] h-[80%] h-full flex items-center">
                   <p className="text=[15px] w-[100%]">
-                  In the third semester of ICT & Media Design, we work in teams on two projects for the client 2Manydots. In this first project, we are developing a marketing news website aimed at marketing professionals (such as marketers, strategists, and copywriters) and entrepreneurs with an interest in marketing.
+                    In the third semester of ICT & Media Design, we work in teams on two projects for the client 2Manydots. In this first project, we are developing a marketing news website aimed at marketing professionals (such as marketers, strategists, and copywriters) and entrepreneurs with an interest in marketing.
                     <br></br>
                     From 2Manydots, we received a detailed PDF containing specific information about the assignment, including the requirements and preferences they want to see reflected in the project. By following the steps of the Double Diamond method, we conducted research, created designs, developed prototypes, tested them with the target audience, and delivered the final product.
                   </p>
@@ -148,8 +155,8 @@ const UpendoPage = () => {
               <div className=" w-[40%] h-[100%] flex flex-col justify-around py-3 items-center ml-32">
                 <div className="overflow-hidden whitespace-normal">
                   <p className="text=[15px] w-[100%] mt-3 ">
-                  This project primarily emphasized design, as we were tasked with creating a brand identity for the website entirely from scratch. The client outlined key requirements, including developing a responsive web design and integrating a headless CMS. Additionally, they requested features such as social media integration, a dark mode, and advertisements.
-                  For the development, we used Next.js as the framework, styled the website with Tailwind CSS, and implemented Storyblok as the headless CMS.
+                    This project primarily emphasized design, as we were tasked with creating a brand identity for the website entirely from scratch. The client outlined key requirements, including developing a responsive web design and integrating a headless CMS. Additionally, they requested features such as social media integration, a dark mode, and advertisements.
+                    For the development, we used Next.js as the framework, styled the website with Tailwind CSS, and implemented Storyblok as the headless CMS.
                   </p>
                 </div>
                 <div>
@@ -207,7 +214,7 @@ const UpendoPage = () => {
         </section>
       </div>
     </main>
-  );
+  )
 }
 
-export default UpendoPage
+export default TrendFocuspage

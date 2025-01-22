@@ -41,14 +41,6 @@ export default function RootLayout({ children }) {
                 width={33} 
                 height={38} />
             </a>
-            <a href="https://www.instagram.com/yusuffffffff._/">
-              <Image
-                src="/images/Instagram.svg"
-                alt="Logo"
-                width={33}
-                height={38}
-              />
-            </a>
           </div>
           <div className="w-[75%]  flex items-center justify-center ">
             <ul className="flex justify-center w-[100%] text-2xl text-[#F47519]">

@@ -119,15 +119,15 @@ export default function Projects() {
         {/* Extra polygon - Boven rechtsboven */}
         <div
           className="absolute w-full h-full mask-polygon transition-transform duration-300 cursor-pointer"
-          onMouseEnter={() => setHoveredProject("Coming Soon")}
+          onMouseEnter={() => setHoveredProject("Personal Project")}
           onMouseLeave={() => setHoveredProject("Choose project")}
-          onClick={() => handlePolygonClick("/MyWorks/ExtraRechts")} // Bijgewerkt pad
+          onClick={() => handlePolygonClick("/MyWorks/JufMerve")} // Bijgewerkt pad
           style={{
             transform: "translate(50%, -100%) rotate(220deg) scale(1.4)",
             top: "-100%",
             right: "-35%",
-            backgroundImage: "url('/images/ComingSoon.png')",
-            backgroundSize: "cover",
+            backgroundImage: "url('/images/PPlogo.svg')",
+            backgroundSize: "contain",
             backgroundPosition: "center",
             WebkitMaskImage: "url('/polygons/Polygon1.svg')",
             WebkitMaskSize: "contain",

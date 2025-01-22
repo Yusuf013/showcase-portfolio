@@ -190,22 +190,22 @@ const JufMervepage = () => {
             <h2 className="text-[#FFFDE4] font-formula1 text-[40px] mb-5">Design</h2>
             <div className="w-[85%] flex justify-around">
               <img
-                src="/images/TrendFocusM1.png"
+                src="/images/PPimage1.png"
                 className="w-auto h-[400px]"
                 alt="Upendo Image 1"
               />
               <img
-                src="/images/TrendFocusM2.png"
+                src="/images/PPimage2.png"
                 className="w-auto h-[400px]"
                 alt="Upendo Image 2"
               />
               <img
-                src="/images/TrendFocusM3.png"
+                src="/images/PPimage3.png"
                 className="w-auto h-[400px]"
                 alt="Upendo Image 3"
               />
               <img
-                src="/images/TrendFocusM4.png"
+                src="/images/PPimage4.png"
                 className="w-auto h-[400px]"
                 alt="Upendo Image 4"
               />

@@ -55,7 +55,7 @@ const Footer = () => {
           {/* Contactgegevens rechts */}
           <div className="w-[35%] h-[45%] flex flex-col items-center justify-end mt-10">
             <p className="text-sm">Yusuftasci013@gmail.com</p>
-            <div className="flex justify-between px-15 mt-2">
+            <div className="flex w-32 justify-between px-15 mt-3">
               <a href="https://www.linkedin.com/in/yusuf-tasci-44a710264/">
                 <Image
                   src="/images/linkedin (14).png"
@@ -64,8 +64,7 @@ const Footer = () => {
                   height={38}
                 />
               </a>
-              <div className="px-12">
-                <a href="https://github.com/Yusuf013">
+              <a href="https://github.com/Yusuf013">
                   <Image
                     src="/images/github (6).png"
                     alt="Logo"
@@ -73,15 +72,6 @@ const Footer = () => {
                     height={38}
                   />
                 </a>
-              </div>
-              <a href="https://www.instagram.com/yusuffffffff._/">
-                <Image
-                  src="/images/instagram (5).png"
-                  alt="Logo"
-                  width={33}
-                  height={38}
-                />
-              </a>
             </div>
           </div>
         </div>

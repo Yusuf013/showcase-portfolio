@@ -11,7 +11,7 @@ export default function AboutMe() {
             <div>
               <h1 className="text-[#F47519] text-[26px]">About me</h1>
             </div>
-            <div>
+            <div className=' w-[800px] '>
               <p>
                 Hi there! I’m Yusuf Tasci, a 3rd semester ICT & Media Design
                 student at Fontys Hogeschool Tilburg, aspiring to become a
@@ -27,7 +27,7 @@ export default function AboutMe() {
               <h1 className="text-[#F47519] text-[26px]">My Experience</h1>
             </div>
             <div>
-              <p>
+              <p className=' w-[800px]'>
                 This semester, I worked on two major projects for 2manydots,
                 gaining hands-on experience with Next.js, Tailwind CSS, and the
                 Storyblok headless CMS. Check out the Projects section for more
@@ -40,14 +40,14 @@ export default function AboutMe() {
               <h1 className="text-[#F47519] text-[26px]">Fields of Interest</h1>
             </div>
             <div>
-              <p>
+              <p className=' w-[800px]'>
                 I’m drawn to Health, Automotive, and Sports, but I’m always open
                 to exploring new ideas and technologies that challenge me to
                 think creatively.
               </p>
             </div>
           </div>
-          <div className="w-full">
+          <div className=" w-[800px]">
             <h1 className="text-[#F47519] text-[26px]">What I’m Improving</h1>
             <p className="text-left">I’m focusing on:</p>
             <ul className="list-disc pl-5 text-left">
@@ -63,7 +63,7 @@ export default function AboutMe() {
               <h1 className="text-[#F47519] text-[26px]">Beyond the Code</h1>
             </div>
             <div>
-              <p>
+              <p className='  w-[800px]'>
                 Outside of coding, I enjoy gaming, reading history, playing
                 football, and hitting the gym. Staying curious and learning new
                 things keeps me motivated to grow both personally and

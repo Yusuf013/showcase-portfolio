@@ -161,7 +161,7 @@ const JufMervepage = () => {
                 </div>
                 <div>
                   <a
-                    href="https://trendfocusnextstoryblok1.vercel.app/"
+                    href="https://qu61h7-cf.myshopify.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

@@ -60,16 +60,6 @@ export default function ContactPage() {
                   />
                 </a>
               </div>
-              <div>
-                <a href="https://www.instagram.com/yusuffffffff._/">
-                  <Image
-                    src="/images/instagram (5).png"
-                    alt="Logo"
-                    width={66}
-                    height={76}
-                  />
-                </a>
-              </div>
             </div>
           </div>
         </div>

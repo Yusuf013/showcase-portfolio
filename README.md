@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Yusuf Tasci's Portfolio
 
-## Getting Started
+Dit is de broncode voor de persoonlijke portfolio van Yusuf Tasci, een derde semester ICT & Media Design student aan Fontys Hogeschool Tilburg. Deze portfolio is ontworpen om zijn vaardigheden en projecten te tonen, met een focus op Front-End Development.
 
-First, run the development server:
+## Inhoud
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Over Mij**: Een sectie die een introductie geeft over Yusuf, zijn ervaring, interesses en wat hij momenteel aan het verbeteren is.
+- **Projecten**: Een overzicht van de projecten waaraan Yusuf heeft gewerkt, inclusief links naar live demo's.
+- **Contact**: Informatie over hoe je contact kunt opnemen met Yusuf.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologieën
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Next.js**: Gebruikt als het framework voor de ontwikkeling van de website.
+- **Tailwind CSS**: Gebruikt voor het stylen van de website.
+- **Framer Motion**: Gebruikt voor animaties binnen de website.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installatie
 
-## Learn More
+1. **Clone de repository**:
+   ```bash
+   git clone https://github.com/Yusuf013/showcase-portfolio
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Navigeer naar de projectmap**:
+   ```bash
+   cd portfolio
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Installeer de afhankelijkheden**:
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Start de ontwikkelserver**:
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+5. **Open de applicatie**:
+   Open [http://localhost:3000](http://localhost:3000) in je browser om de applicatie te bekijken.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Projecten
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Upendo**: Een project gericht op data-analyse en visualisatie voor bedrijven.
+- **TrendFocus**: Een marketingnieuwswebsite voor professionals en ondernemers.
+- **Juf Merve**: Lesmateriaal Webshop voor basisschooldocenten en ouders.
+
+## Contact
+
+Voor vragen of samenwerkingen, neem contact op via [Yusuftasci013@gmail.com](mailto:Yusuftasci013@gmail.com).
+

@@ -89,14 +89,14 @@ export default function Projects() {
         {/* Nieuwe polygon - Linksboven */}
         <div
           className="absolute w-full h-full mask-polygon transition-transform duration-300 cursor-pointer"
-          onMouseEnter={() => setHoveredProject("Trendfocus")}
+          onMouseEnter={() => setHoveredProject("FitQuest")}
           onMouseLeave={() => setHoveredProject("Choose project")}
-          onClick={() => handlePolygonClick("/MyWorks/TrendFocus")} // Bijgewerkt pad
+          onClick={() => handlePolygonClick("/MyWorks/FitQuest")} // Bijgewerkt pad
           style={{
             transform: "translate(-50%, -50%) rotate(73deg) scale(1.4)",
             top: "-25%",
             left: "-75%",
-            backgroundImage: "url('/images/Trendfocus.svg')",
+            backgroundImage: "url('/images/FitQuestLogo.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             WebkitMaskImage: "url('/polygons/Polygon1.svg')",
